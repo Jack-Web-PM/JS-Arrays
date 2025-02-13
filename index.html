@@ -36,6 +36,51 @@ let seasons = ['winter', 'spring', 'summer', 'fall'];
 seasons[3] = 'autumn';
 console.log(seasons);
 
+//JS Arrays[1] notes //Date: 2/13/25
+//Arrays with let and const; May recall that and declare viriables with bot the let and const keywords,
+//Variables declared with let can be reassingned; Varaibles declared with the const cannot be reassigned.
+//elements in an array declared with const remain mutable, means can change the contents, but cannot reassign a new array
+
+const condiments = ['Ketchup','Mustard','Relish'];
+condiments[2] = 'Mayo';
+const utensils = ['fork','spoon','knife'];
+utensils[utensils.length] = 'Spork';
+console.log(utensils);
+console.log(utensils.length-2);
+//cannot remodify the array
+
+console.log(newYearsResolutions.length);
+console.log(newYearsResolutions.length-1);//Output: 2
+
+//.push() Method; these methods are specifically called on arrays to make common tasks, like adding and removing elements, more straightforward
+//push() or add comma after an array
+//example: 
+const itemTracker = ['item 0', 'item 1', 'item 2'];
+itemTracker.push('item 3', 'item 4');
+console.log(itemTracker);
+// Output: ['item 0', 'item 1', 'item 2', 'item 3', 'item 4'];
+// .push() can access the push method by using dot notation, after we call it like a function, .push() can take a single argument or multiple arguments seperated by commas
+
+//practice
+const chores = ['A', 'B'];
+chores.push('3','4');
+const remove = chores.pop();
+console.log(remove);
+console.log(chores);
+
+//.pop() Method; it removes the last item of an array
+const newItemTracker = ['item 0','item 1','item 2'];
+const removed = newItemTracker.pop();
+console.log(newItemTracker);
+// Output: [ 'item 0', 'item 1' ]
+console.log(removed);
+// Output: item 2
+
+//.pop() method does not take any arguments, it returns the value of the last element, its a method that mutates the initial array
+//practice
+
+
+
 
 </script>
 </body>
